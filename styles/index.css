@@ -1,0 +1,74 @@
+body {
+  font-family: "Open Sans", serif;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  height: 4rem;
+}
+
+.header-container .name {
+  flex-grow: 2;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: right;
+}
+
+.nav-links nav {
+  padding-left: 1rem;
+}
+
+.content {
+  height: 100vh;
+}
+
+.brief {
+  display: flex;
+  margin-left: 2rem;
+  align-items: center;
+  h2 {
+    font-size: 4rem;
+    margin-right: 10rem;
+  }
+}
+
+.intro {
+  display: flex;
+  justify-content: right;
+  margin-left: 25rem;
+  margin-right: 9rem;
+  h4 {
+    font-weight: lighter;
+    font-size: 2rem;
+    text-align: right;
+  }
+}
+
+/*
+.hamburger-icon {
+  display: none;
+}
+
+// Media query for mobile devices 
+@media (max-width: 768px) {
+  .nav-list {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+} */
