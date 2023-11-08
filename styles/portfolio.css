@@ -1,0 +1,83 @@
+body {
+  font-family: "Open Sans", serif;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  height: 3rem;
+  align-items: center;
+  width: 100%;
+}
+
+.header-container .name {
+  flex-grow: 2;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: right;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+  align-items: center;
+}
+
+.activePage {
+  color: rgb(162, 0, 255);
+}
+
+.nav-links nav {
+  padding-left: 1rem;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.5s ease;
+}
+
+.link:hover {
+  color: rgb(162, 0, 255);
+}
+
+.content {
+  height: 100vh;
+}
+
+.contentMiddle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentMiddle > h2 {
+  font-size: 4rem;
+}
+
+.contentMiddle > span {
+  font-size: 1.5rem;
+  width: 80%;
+  text-align: center;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.5rem;
+}
+
+.caseStudyImage {
+  height: 240px;
+  width: 325px;
+}
