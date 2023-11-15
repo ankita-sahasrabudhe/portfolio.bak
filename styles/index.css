@@ -39,17 +39,13 @@ body {
   color: rgb(162, 0, 255);
 }
 
-.content {
-  height: 100vh;
-}
-
 .brief {
   display: flex;
   margin-left: 2rem;
   align-items: center;
 }
 
-.brief > h2 {
+.brief>h2 {
   font-size: 4rem;
   font-weight: lighter;
   margin-right: 10rem;
@@ -62,17 +58,72 @@ body {
   margin-right: 1rem;
 }
 
-.intro > h4 {
+.intro>h4 {
   font-weight: lighter;
   font-size: 2rem;
 }
 
-.intro > img {
+.intro>img {
   justify-self: start;
   height: 300px;
   width: 300px;
   margin-right: 1rem;
 }
+
+/* --------- footer begin --------- */
+.footerGridContainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  padding: 1rem;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.footerFirstColumn,
+.footerSecondColumn,
+.footerThirdColumn {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.footerFirstColumn {
+  justify-content: start;
+}
+
+.footerSecondColumn {
+  justify-content: center;
+}
+
+.footerThirdColumn {
+  justify-content: end;
+}
+
+.footerNav>nav,
+.footerNavSocial>nav {
+  padding-bottom: 2rem;
+}
+
+.footerNavSocial>nav {
+  text-align: end;
+}
+
+.footerName {
+  height: auto;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.copywriteContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* --------- footer end --------- */
 
 /*
 .hamburger-icon {

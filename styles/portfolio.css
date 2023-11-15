@@ -1,83 +1,166 @@
+/* ------------- constant styles ------------- */
 body {
-  font-family: "Open Sans", serif;
+    font-family: "Open Sans", serif;
+    line-height: 1.5;
 }
 
 .header-container {
-  display: flex;
-  align-items: center;
-  padding-bottom: 1rem;
-  position: fixed;
-  top: 0;
-  background-color: white;
-  height: 3rem;
-  align-items: center;
-  width: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    height: 3rem;
+    align-items: center;
+    width: 100%;
 }
 
 .header-container .name {
-  flex-grow: 2;
-  text-decoration: none;
-  font-size: 24px;
-  font-weight: bold;
-  color: black;
-  padding-top: 0.5rem;
-  padding-left: 1rem;
+    flex-grow: 2;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
 }
 
 .nav-links {
-  display: flex;
-  justify-content: right;
-  padding-right: 1.5rem;
-  padding-top: 0.5rem;
-  align-items: center;
+    display: flex;
+    justify-content: right;
+    padding-right: 1.5rem;
+    padding-top: 0.5rem;
+    align-items: center;
 }
 
 .activePage {
-  color: rgb(162, 0, 255);
+    color: rgb(162, 0, 255);
 }
 
 .nav-links nav {
-  padding-left: 1rem;
+    padding-left: 1rem;
 }
 
 .link {
-  text-decoration: none;
-  color: #000;
-  transition: color 0.5s ease;
+    text-decoration: none;
+    color: #000;
+    transition: color 0.5s ease;
 }
 
 .link:hover {
-  color: rgb(162, 0, 255);
+    color: rgb(162, 0, 255);
 }
 
-.content {
-  height: 100vh;
-}
+/* --------------- constant styles end ------------- */
 
 .contentMiddle {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.contentMiddle > h2 {
-  font-size: 4rem;
+.contentMiddle>h2 {
+    font-size: 4rem;
 }
 
-.contentMiddle > span {
-  font-size: 1.5rem;
-  width: 80%;
-  text-align: center;
+.contentMiddle>span {
+    font-size: 1.5rem;
+    width: 80%;
+    text-align: center;
 }
 
 .gridContainer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0.5rem;
+    padding: 4rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.firstColumn,
+.secondColumn,
+.thirdColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .caseStudyImage {
-  height: 240px;
-  width: 325px;
+    height: 240px;
+    width: 325px;
 }
+
+.caseStudyDescription {
+    width: 80%;
+}
+
+.readCaseStudyContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.readCaseStudy {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background-color: #000;
+    text-align: justify;
+    text-decoration: none;
+}
+
+/* --------- footer begin --------- */
+.footerGridContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 1rem;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.footerFirstColumn,
+.footerSecondColumn,
+.footerThirdColumn {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.footerFirstColumn {
+    justify-content: start;
+}
+
+.footerSecondColumn {
+    justify-content: center;
+}
+
+.footerThirdColumn {
+    justify-content: end;
+}
+
+.footerNav>nav,
+.footerNavSocial>nav {
+    padding-bottom: 2rem;
+}
+
+.footerNavSocial>nav {
+    text-align: end;
+}
+
+.footerName {
+    height: auto;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+.copywriteContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* --------- footer end --------- */
